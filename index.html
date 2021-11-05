@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font awesome cn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="box">
+
+            <i class="fa fa-envelope-open-text" aria-hidden="true"></i>
+            <h3>don't miss any updates</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <form action="index.html" method="post">
+                <input type="email" placeholder="enter your email" required>
+                <input type="submit" value="subscribe">
+            </form>
+            <span id="close" class="fas fa-times"></span>
+        </div>
+    </div>
+
+    <button id="open">click here</button>
+
+
+    <script>
+
+        var open = document.querySelector('#open');
+        var close = document.querySelector('#close');
+        var box = document.querySelector('.box');
+
+        open.addEventListener('click', () => {
+            box.style.display = 'block';
+        })
+        close.addEventListener('click', () => {
+            box.style.display = 'none';
+        })
+
+    </script>
+
+</body>
+</html>
